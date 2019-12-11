@@ -14,7 +14,7 @@ join category as c
 select p.productName as Name
         ,od.quantity as Quantity
 from orderDetail as od
-join product as p
+join product as p 
     on od.productID=p.Id
 join [order] as o
     on od.OrderId=o.Id
